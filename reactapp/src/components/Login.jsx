@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
-import AuthService from '../services/AuthService';
+import Auth from './Auth';
 import State from './State'
-import AcademyList from './AcademyList';
+import Adminacademy from './Adminacademy';
 // import Link from'react'
 //const DESCRIPTION = "During growing years, kids learn faster, so, it would be great if you enrol your kids to an abacus classes at an early age. While we all want our children to achieve great heights in life, it’s important to underline that early childhood is the most crucial period especially for the development of brain and other cognitive skills. Any child who knows basic counting from 1 to 100 is technically qualiﬁed to be enrolled into Abacus classes.";
 const getLoginStatus = window.localStorage.getItem("isLoggedIn");
 const getRole = window.localStorage.getItem("role");
-class LoginComponent extends Component {
+class Login extends Component {
 
     
     
@@ -89,7 +89,7 @@ class LoginComponent extends Component {
     render() {
         return (
 
-            ((getLoginStatus === 'true') && (getRole === 'user' || 'admin'))? <AcademyList/> :
+            ((getLoginStatus === 'true') && (getRole === 'user' || 'admin'))? <Adminacademy/> :
             <div>
                 <section
                     className="h-100 gradient-form"
@@ -175,4 +175,4 @@ class LoginComponent extends Component {
     }
 }
 
-export default LoginComponent;
+export default Login;

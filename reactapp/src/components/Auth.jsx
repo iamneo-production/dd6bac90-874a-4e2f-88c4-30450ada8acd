@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const ACADEMY_BASE_API_URL = "http://localhost:8080"
 
-class AuthService{
+class Auth{
 
     loginUser(user){
         return axios.post(ACADEMY_BASE_API_URL + '/user/login', user);
@@ -22,4 +22,4 @@ class AuthService{
 
 }
 
-export default new AuthService();
+export default new Auth();

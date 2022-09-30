@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import AuthService from '../services/AuthService';
+import Auth from './Auth';
 
-class RegisterComponent extends Component {
+class Signup extends Component {
     constructor(props) {
         super(props)
 
@@ -46,11 +46,11 @@ class RegisterComponent extends Component {
         console.log(payload);
 
         if(payload.role === 'admin'){
-            AuthService.createAdmin(payload).then(res => {
+            Auth.createAdmin(payload).then(res => {
                 console.log(res.data);
             });
         }else{
-            AuthService.createUser(payload).then(res => {
+            Auth.createUser(payload).then(res => {
                 console.log(res.data);
         });
     }
@@ -166,4 +166,4 @@ class RegisterComponent extends Component {
 
 }
 
-export default RegisterComponent;
+export default Signup;

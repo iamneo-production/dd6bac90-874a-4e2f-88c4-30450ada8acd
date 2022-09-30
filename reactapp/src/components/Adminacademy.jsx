@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AcademyService from '../services/AcademyService';
 import { Link } from 'react-router-dom';
-import LoginComponent from './LoginComponent';
+import LoginComponent from './Login';
 import AppState from './State'
 
 const getLoginStatus = window.localStorage.getItem("isLoggedIn");
@@ -27,7 +27,7 @@ const thumbnials = [
     "https://cdn.pixabay.com/photo/2020/11/29/10/17/abacus-5787097__480.jpg"
 ];
 
-class AcademyList extends Component {
+class Adminacademy extends Component {
 
 
     constructor(props) {
@@ -140,4 +140,4 @@ class AcademyList extends Component {
     }
 }
 
-export default AcademyList;
+export default Adminacademy;

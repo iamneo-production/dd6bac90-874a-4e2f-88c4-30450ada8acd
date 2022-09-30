@@ -1,6 +1,6 @@
 import React from "react";
 
-const Course = () => {
+const Admincourse = () => {
   return (
     <div>
       <body className="bg-gray-100 flex bg-local">
@@ -171,4 +171,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default Admincourse;
