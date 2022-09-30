@@ -1,0 +1,43 @@
+table, th, td {
+    text-align: center;
+}
+table {
+    border:1px solid black;
+    position: relative;
+}
+th {
+    height: 3rem;
+    background-color: green;
+    color: #fff;
+}
+tr{
+    border:1px solid black;
+}
+td {
+    height: 2rem;
+}
+tr:hover {
+    cursor: pointer;
+    background-color: rgb(232, 232, 232);
+}
+.edit_button  {
+    background-color: transparent;
+    border: none;
+}
+.add_students {
+    position: absolute;
+    right: 10px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 12px;
+}
+.add_students i {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border: solid 1px black;
+    border-radius: 50%;
+    padding: 4px;
+}
